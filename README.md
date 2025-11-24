@@ -8,7 +8,7 @@ I think the code speaks for itself...
 let items = [5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18];
 
 let maxNeg = 0;
-let max = 0;
+let max = items[0];
 for (let item of items) {
   if (item > max) {
     max = item;
