@@ -57,6 +57,16 @@ from arrSort import sortAsync
 if __name__ == "__main__":
     sortArray = [5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18]
 
-    asyncio.run(sortArrayAsync(sortArray))
+    asyncio.run(sortArrayAsync(sortArray, 1))
 
+```
+
+### How to use the typescript library :D
+
+```ts
+let sortArray = [5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18];
+
+SleepSortAsync(sortArray).then((r) => {
+  console.log(r);
+});
 ```
