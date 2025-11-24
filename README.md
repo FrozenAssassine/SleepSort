@@ -1,4 +1,4 @@
-## Sorting Algorithm for arrays with negative and positive numbers
+## Async Number Sorter
 It sorts the array asynchronously by using timed delays proportional to each item's value.
 
 I think the code speaks for itself...
