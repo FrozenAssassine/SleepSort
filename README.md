@@ -1,4 +1,4 @@
-# Async Number Sorter
+# Sleep Sort - Async Number Sorter
 
 It sorts the array asynchronously by using timed delays proportional to each item's value.
 
