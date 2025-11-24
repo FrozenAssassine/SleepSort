@@ -14,10 +14,8 @@ SleepSort(test).then((r) => {
 function SleepSort(items, accuracyAndDurationAmplifier = 1) {
     return new Promise((resolve) => {
         let maxNeg = 0;
-        let max = 0;
 
         for (let item of items) {
-            if (item > max) max = item;
             if (item < maxNeg) maxNeg = item;
         }
 
