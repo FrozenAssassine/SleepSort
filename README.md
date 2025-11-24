@@ -38,7 +38,7 @@ The `accuracyAndDurationAmplifier` just scales the delays so tiny numbers like 0
 
 Since this is such a new and useful library we directly thought about supporting multiple languages, so you as a user has a pretty easy start regardless of the language used.
 
-### How to use the javascript library
+### Javascript library
 
 ```js
 let sortArray = [5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18];
@@ -48,7 +48,7 @@ SleepSort(sortArray).then((r) => {
 });
 ```
 
-### How to use the python library
+### Python library
 
 ```py
 import asyncio
