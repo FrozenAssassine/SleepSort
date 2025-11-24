@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
 ```
 
-### How to use the typescript library :D
+### Typescript library :D
 
 ```ts
 let sortArray = [5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18];
