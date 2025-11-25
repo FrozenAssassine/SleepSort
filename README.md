@@ -7,6 +7,7 @@ I think the code speaks for itself...
 ```js
 let items = [5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18];
 
+let accuracyAndDurationAmplifier = 1;
 let maxNeg = 0;
 let max = items[0];
 for (let item of items) {
@@ -23,13 +24,22 @@ for (let item of items) {
 let res = [];
 for (let item of items) {
   if (item < 0) {
-    setTimeout(() => res.push(item), -(maxNeg - item));
+    setTimeout(
+      () => res.push(item),
+      -(maxNeg - item) * accuracyAndDurationAmplifier
+    );
   } else {
-    setTimeout(() => res.push(item), item + -maxNeg);
+    setTimeout(
+      () => res.push(item),
+      (item + -maxNeg) * accuracyAndDurationAmplifier
+    );
   }
 }
 
-setTimeout(() => console.log(res), max + -maxNeg + 1);
+setTimeout(
+  () => console.log(res),
+  (max + -maxNeg + 1) * accuracyAndDurationAmplifier
+);
 ```
 
 The `accuracyAndDurationAmplifier` just scales the delays so tiny numbers like 0.00005 don’t get lost due to timer resolution.
