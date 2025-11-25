@@ -70,3 +70,14 @@ SleepSortAsync(sortArray).then((r) => {
   console.log(r);
 });
 ```
+
+### C# implementation
+
+```ts
+float[] sortArray = { 5, 9, 1, 20, 3, -1, -9, 12, 44, 7, 0, 18 };
+//accuracy should be start with 100 here
+float[] sorted = await SleepSortAsync(sortArray, 100);
+
+foreach (float item in sorted)
+  Console.WriteLine(item);
+```
